@@ -1,0 +1,23 @@
+
+<div style="margin-top:9em">
+edit articles here
+
+
+<%= form_for @article, :url=>article_path, :html=>{:multipart=>true} do |f| %>
+
+      <table>
+            <tr>
+                  <td><%= f.label :title %></td>
+                  <td><%= f.text_field :title %></td>
+            </tr>
+            <tr>
+                  <td><%= f.label :text %></td>
+                  <td><%= f.text_area(:text,:size=>'200x30') %></td>
+            </tr>
+
+      </table>
+      
+      <%= f.submit "Submit article" %>
+
+<%end%>
+</div>

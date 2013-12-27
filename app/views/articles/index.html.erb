@@ -1,0 +1,42 @@
+<div class="everythingelse">
+
+
+	<% if @articles.count ==0%>
+	"Oops no articles here!"
+	<%else%>
+		<% @articles.each do |a|%>
+		<h1><%=a.title%></h1>
+		<%=truncate(a.text,length: 900).html_safe%> 
+		<%=link_to "Continue",posts_date_path(a.created_at.year,a.created_at.month,a.slug)%>
+		
+		<%end%>
+	<%end%>
+</div>
+<!--
+<div class = 'everythingelse'>
+
+		<h1> An Interesting Blog Title</h1>
+		<p class='author'>By TERENCE CHOW </p><p class='date'>June 29th 2013</p>
+	
+	<p class='introp'>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pulvinar vitae sem eget malesuada. Ut molestie feugiat ornare. Curabitur placerat, dui sed convallis laoreet, odio sem sodales metus, a ullamcorper augue enim quis nibh.  </p>
+	<p>
+		
+				If you can keep your head when all about you are losing theirs and blaming it on you; If you can trust yourself when all men doubt you, but make allowance for their doubting too; if you can wait and not be tired by waiting,or being lied about, don't deal in lies, or being hated, don't give way to hating, and yet don't look too good, nor talk too wise; if you can dream — and not make dreams your master; if you can think — and not make thoughts your aim; if you can meet with Triumph and Disaster and treat those two impostors just the same.</p>
+				<p>If you can bear to hear the truth you've spoken twisted by knaves to make a trap for fools, or watch the things you gave your life to broken, and stoop and build 'em up with wornout tools; if you can make one heap of all your winnings and risk it on one turn of pitch-and-toss, and lose, and start again at your beginnings and never breathe a word about your loss.</p>
+				<h2> A SECOND LEVEL HEADER</h2>
+	<p>
+				In pharetra, erat vitae laoreet gravida, elit elit dictum ipsum, non egestas nulla lacus nec purus. Fusce porttitor orci orci, id posuere quam pellentesque vestibulum. Nullam ac lacus faucibus, tincidunt neque scelerisque, molestie odio. Etiam dignissim arcu ut sapien condimentum, pellentesque blandit elit bibendum. Morbi eu tincidunt dui. Ut quis suscipit neque. Nulla adipiscing ligula sed mi fermentum gravida dictum sed nibh. Nullam ullamcorper lectus eget erat commodo malesuada. Nulla eros orci, consequat sed lacus sit amet, luctus suscipit lorem. Vestibulum a tellus nunc.</p>
+	<h2> ANOTHER SECOND LEVEL HEADER</h2>
+	<p>
+				Praesent semper nulla eu sem pulvinar, non rutrum magna feugiat. Aliquam luctus quam purus, in adipiscing orci semper ut. Sed posuere ultricies erat, ut fringilla nunc interdum ac. Suspendisse ultricies vel metus at sagittis. Nullam in elementum sapien, eget adipiscing purus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sagittis lectus quis enim ultrices, vehicula dignissim quam tincidunt. Mauris sodales leo et magna eleifend, vel dignissim quam euismod. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam gravida nisi augue, in lobortis tortor adipiscing nec. Vestibulum laoreet dolor nec tellus malesuada, vitae vulputate sapien tristique. Fusce vitae pulvinar arcu. Nam sed ligula libero. Aenean in magna a est fringilla faucibus non non nulla.
+	<br>
+				Proin turpis massa, scelerisque id mauris id, feugiat mollis tellus. In urna metus, consequat nec aliquam ut, interdum ut erat. Duis in ipsum mi. In ullamcorper quis ligula nec eleifend. Integer vel erat varius, vulputate mi vitae, consectetur quam. Vestibulum et ultrices odio. Ut eget interdum elit. In vel magna lobortis, adipiscing tortor vel, ultricies sem. Vivamus tristique orci aliquet sapien faucibus vehicula. Duis eu quam viverra, tristique ligula et, laoreet nibh. Quisque feugiat felis in orci fringilla, vitae consequat sapien porta.
+	</p>
+	
+</div>
+-->
+
+<footer>
+	this is the footer
+</footer>

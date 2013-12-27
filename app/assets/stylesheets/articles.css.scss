@@ -1,0 +1,199 @@
+// Place all the styles related to the articles controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+html{
+	height:100%;
+	width:100%;
+}
+
+body {
+	font-style: normal;
+	font-weight:300;
+	height:100%;
+	width:100%;
+	margin:0 0 0 0;
+	font-size: 21px;
+	font-family:'museo-sans';
+	line-height: 131.57894736842107%;
+	color:#333;
+}
+
+header{
+	position:fixed;
+	font-family:'acta-display';
+	font-size:1.05em;
+	top:0;
+	left:0;
+	width:100%;
+	height:5em;
+	z-index: 1;
+	background-color:rgb(255,255,255);
+	.catchphrase{
+		height:5em;
+		line-height: 5em;
+		display:inline-block;
+		margin-left:5%;
+		width:30%;
+		margin-right:33%;
+	}
+	.articlesmenu{
+		height:5em;
+		line-height: 5em;
+		display:inline-block;
+		width:10%;
+		text-align: center;
+	}
+	.projects{
+		height:5em;
+		line-height:5em;
+		display:inline-block;
+		width:10%;
+		text-align: center;
+	}
+	.about{
+		height:5em;
+		line-height: 5em;
+		display:inline-block;
+		width:10%;
+		text-align: center;
+	}
+	.border{
+		width:100%;
+		height:1px;
+		background-color:rgb(224,224,224); //248,248,248 is virtually undetectable, 224, 224,224 is a nice light gray
+	}
+	a:link {color:#333;
+			text-decoration:none;}
+			a:visited {color:#333;
+			text-decoration:none;}
+			a:hover {color:#333;
+			text-decoration:none;}
+			a:active {color:#333;
+			text-decoration:none;}
+}
+
+.everythingelse {
+	margin:8em auto;
+	max-width: 850px;
+
+	h1{
+		font-family: 'acta-display';
+		font-size:3.142857em;
+		font-weight:400;
+		font-style:normal;
+		line-height: 113.63636363636364%;
+		margin-bottom:0.37878787878em;
+	}
+	p.author{
+		font-size:0.9047619em;
+		color:#666464;
+		display:inline;
+	}
+	p.date{
+		font-style:italic;
+		font-size:0.9047619em;
+		color:#666464;
+		display:inline;
+	}
+	p.introp{
+		font-size:1.42857em;
+		line-height: 166.6%;
+		font-weight:300;
+		font-style:normal;
+	}
+
+	p{
+		font-size: 1em;
+		line-height: 162.8947368421%;
+	}
+
+	h2{
+		font-size:1.42857em;
+		font-weight: 300;
+		margin-top:1.6666685em;
+		margin-bottom: 0.833333333em;
+	}
+}
+
+
+.toc{
+	height:100%;
+	width:100%;
+	overflow: hidden;
+	.titlerow{
+		height:16.66666667%;
+		font-weight:900;
+		div{
+			font-size:3em;
+			line-height: 3em;
+			letter-spacing: 3px;
+		}
+	}
+	.left{
+		width:17.5%;
+		background-color:rgb(23,21,21);
+		color:rgb(255,255,255);
+		font-size:2em;
+		text-align: right;
+		padding-right: 0.5%;
+		font-family:'acta-display';
+		display:inline-block;
+		vertical-align: top;
+		height:100%;
+		line-height:1.5em;
+	}
+	.middle{
+		width:32.5%;
+		font-family:'acta-display';
+		font-size:2em;
+		display:inline-block;
+		vertical-align: top;
+		border-right:solid;
+		border-width:1px;
+		height:100%;
+		line-height:1.5em;
+		color:rgb(23,21,21);
+	}
+	.right {
+		width:45%;
+		display:inline-block;
+		height:100%;
+		font-size:1em;
+		line-height:1.5em;
+		padding-left:1%;
+		padding-top:0.5em;
+		color:rgb(23,21,21);
+	}
+	.firstrow{
+		height:16.66666667%;
+	}
+	.secondrow{
+		height:16.66666667%;
+	}
+	.thirdrow{
+		height:16.66666667%;
+	}
+	.fourthrow{
+		height:16.66666667%;
+	}
+	.fifthrow{
+		height:16.66666667%;
+	}
+}
+
+footer{
+	height:3em;
+	width:100%;
+}
+
+.aboutpage{
+	height:100%;
+	.first{
+		height:100%;
+	}	
+	.second{
+		height:100%;
+	}
+}
