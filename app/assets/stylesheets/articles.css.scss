@@ -8,6 +8,8 @@ html{
 	width:100%;
 }
 
+
+
 body {
 	font-style: normal;
 	font-weight:300;
@@ -37,8 +39,7 @@ header{
 		line-height: 5em;
 		display:inline-block;
 		margin-left:5%;
-		width:30%;
-		margin-right:33%;
+		width:62%;
 	}
 	.articlesmenu{
 		height:5em;
@@ -60,6 +61,13 @@ header{
 		display:inline-block;
 		width:10%;
 		text-align: center;
+	}
+	.menu{
+		height:5em;
+		line-height: 5em;
+		width:10%;
+		text-align: center;
+		display:none;
 	}
 	.border{
 		width:100%;
@@ -203,5 +211,55 @@ footer{
 	}	
 	.second{
 		height:100%;
+	}
+}
+
+@media all and (max-width:950px){
+	body {
+		.everythingelse{max-width:600px;}
+	}
+}
+
+@media all and (max-width:750px){
+	body{
+		header{
+			.catchphrase{
+				width:80%;
+			}
+			.articlesmenu{
+				display:none;
+			}
+			.projects{
+				display:none;
+			}
+			.about{
+				display:none;
+			}
+			.menu{
+				display:inline-block;
+			}
+		}
+	}
+}
+@media all and (max-width:650px){
+	body{
+		font-size:15px;
+		.everythingelse{
+			max-width:400px;
+		}
+	}
+}
+
+@media all and (max-width:450px){
+	body {
+		header{
+			.menu{
+				display:none;
+			}
+		}
+		.everythingelse{
+			max-width:250px;
+		}
+
 	}
 }
