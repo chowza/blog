@@ -1,21 +1,40 @@
 <header>
+
 	<div class='catchphrase'>
 	<%= link_to 'An Interesting Catchphrase', '#' %>
 	</div>
-	<div class='articlesmenu'>
-		<%= link_to 'Articles', articles_path %>
-	</div>
-	<div class='projects'>
-		<%= link_to 'Projects', '#' %>
-	</div>
-	<div class='about'>
-		<%= link_to 'About', about_path %>
-	</div>
-
-	<div class='menu'>
-		<%= link_to 'Menu', '#' %>
+	<div class="dropdownmenu">
+		
+		<div class='articlesmenu'>
+			<%= link_to 'Articles', articles_path %>
+		</div>
+		<div class='projects'>
+			<%= link_to 'Projects', '#' %>
+		</div>
+		<div class='about'>
+			<%= link_to 'About', about_path %>
+		</div>
 	</div>
 	
-	<div class='border'>
-	</div>
 </header>
+
+<script>
+
+
+	$(".catchphrase").click(function() {
+		if($(window).width()<979){
+			$(".dropdownmenu").slideToggle("slow");
+		}
+	});
+
+	$(window).resize(function(){    
+    	if($(window).width()>979){
+			$(".dropdownmenu").css("display","inline-block");
+			}
+	});
+
+	/* Clicking menu only works when the screen size is <979 aka when the menu items are not listed.*/
+	/* however upon resizing the window, the menu starts open instead of closed. Need to figure a way so that upon resizing the menu starts closed'
+	/* when opening on a screen <979 the menu starts closed and the click button works*/
+
+</script>
